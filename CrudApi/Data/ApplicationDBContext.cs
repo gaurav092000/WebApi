@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CrudApi.Models;
+using System;
 using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;
@@ -10,6 +11,6 @@ namespace CrudApi.Data
     {
         public ApplicationDBContext() : base("WebApiCrud") { }
 
-
+          public DbSet<Employess> employesses { get; set; }
     }
 }
